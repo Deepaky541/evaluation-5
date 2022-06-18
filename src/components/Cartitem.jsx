@@ -44,7 +44,7 @@ export const Cartitem = ({data,sum}) => {
 
 
          useEffect(() => {
-           sum(data.price,count);
+           sum(data.price*count);
          }, [count]);
         
 

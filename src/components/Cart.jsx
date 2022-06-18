@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 import { Cartitem } from './Cartitem';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Cart = () => {
@@ -10,6 +11,7 @@ export const Cart = () => {
      const [summ, setsumm] = useState(0);
        const [error, seterror] = useState(false);
        const [loading, setloading] = useState(true);
+        const navigate = useNavigate();
 
      const sum=(data)=>{
          setsumm(data);
@@ -47,7 +49,11 @@ export const Cart = () => {
       <br />
       <br />
       <div>total pay:{summ}</div>
-      <button></button>
+      <br />
+      <button onClick={()=>{
+          alert("success")
+          setInterval(navigate("/"),2000);
+      }}>buy</button>
     </div>
   );
 }
