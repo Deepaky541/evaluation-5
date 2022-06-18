@@ -1,0 +1,34 @@
+{
+  "item": [
+    {
+      "id": 1,
+      "title": "deo",
+      "description": "typicode",
+      "price": 100,
+      "count": 0
+    },
+    {
+      "id": 2,
+      "title": "perfume",
+      "description": "typicode",
+      "price": 1000,
+      "count": 0
+    }
+  ],
+  "cartitems": [
+    {
+      "id": 1,
+      "title": "deo",
+      "description": "typicode",
+      "count": 2,
+      "price": 100
+    },
+    {
+      "id": 2,
+      "title": "perfume",
+      "description": "typicode",
+      "count": 6,
+      "price": 1000
+    }
+  ]
+}
